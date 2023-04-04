@@ -39,7 +39,7 @@ public class Actor {
     }
 
 //    public static Actor getById(String id) {
-//        return books.stream()
+//        return actor.stream()
 //                .filter(book -> book.id().equals(id))
 //                .findFirst()
 //                .orElse(null);
