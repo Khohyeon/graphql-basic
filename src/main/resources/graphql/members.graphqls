@@ -1,0 +1,29 @@
+#type Query {
+#    memberBySn(memberSn: Int!): Member,
+#}
+## memberBySn : Query타입의 필드명 (메소드의 역할)
+## (memberSn: Int!) : Int형의 memberSn이라는 파라미터가 필수
+## Member! : 아래의 Member 타입으로 return 값을 반환
+#type Member {
+#    memberSn: Int!,
+#    memberId: String!
+#}
+## ! 는 필수 값(Non-Null)임을 의미, nullable의 경우 !를 제거
+#
+## === mutation type ===
+#
+#type Mutation {
+#    createMember(saveMemberInfo: SaveMember!): Member!,
+#    deleteMemberBySn(memberSn: Int!): Boolean!
+#}
+#
+#type Member1 {
+#    memberSn: Int!,
+#    memberId: String!,
+#}
+#
+## createMember(saveMemberInfo: SaveMember!): Member! 의 파라미터
+#input SaveMember {
+#    memberId: String!,
+#    memberPw: String!,
+#}
