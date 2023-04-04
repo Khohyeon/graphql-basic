@@ -37,4 +37,12 @@ public class Actor {
         this.address = address;
         this.filmId = filmId;
     }
+
+//    public static Actor getById(String id) {
+//        return books.stream()
+//                .filter(book -> book.id().equals(id))
+//                .findFirst()
+//                .orElse(null);
+//    }
+
 }

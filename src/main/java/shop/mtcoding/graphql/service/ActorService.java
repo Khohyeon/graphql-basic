@@ -13,6 +13,7 @@ import java.util.List;
 
 @Service
 public class ActorService implements GraphQLQueryResolver, GraphQLMutationResolver {
+    @Autowired
     private ActorRepository actorRepository;
 
     @Autowired

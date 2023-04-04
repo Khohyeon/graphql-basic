@@ -1,0 +1,11 @@
+query ($id:Int){
+    getAllActors {
+        actorId
+        firstName
+        address
+    }
+    getActorById(id: $id){
+        actorId
+        firstName
+    }
+}
